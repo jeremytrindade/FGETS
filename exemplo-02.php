@@ -32,7 +32,7 @@ echo "Arquivo criado com sucesso";
 
 */
 
-$espaco = fopen("base64.txt","w+");
+$espaco = fopen("base64.txt","w+");//AQUI É PARA CRIAR O FICHEIRO QUE USEI PARA VER O SEU "PESO"
 
 fwrite($espaco, $imagem);
 fclose($espaco);
@@ -65,7 +65,7 @@ echo json_encode($data);
 
 */
 
-$images = scandir("images");
+$images = scandir("images");// E AQUI USEI ISTO PARA VER A DIFERENÇA ENTRE A IMAGEM E O FICHEIRO EM TXT
 
 $data = array();
 
